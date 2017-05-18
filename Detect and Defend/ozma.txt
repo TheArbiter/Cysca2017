@@ -1,0 +1,7 @@
+tshark -r "ozma.pcapng.part" -Tfields -e eth.src -e eth.dst -e ip.src -e ip.dst -e http.host | sort | uniq
+
+This then gives us a list of mac address and ip address and we notice that 00:50:56:91:7d:36 is the only mac address that has different ip.src address compared to the other mac address that have a single ip src adrress and different ip.dst address. So we believe that 00:50:56:91:7d:36 could be the MAC address
+
+
+00:50:56:91:ab:59 - could be the mac address 
+
